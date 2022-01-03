@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')%> 
+    <link rel="stylesheet" href="../css/partials/products.css">
+    <link rel="stylesheet" href="../css/product/productList.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Product List</title>
+</head>
+<body>
+    <%- include('../partials/header')%>       
+    <section>      
+        <% products.forEach(product => { %> 
+            <%- include('../partials/products', {product}) %>
+        <% }); %>
+    </section>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head')%> 
+    <link rel="stylesheet" href="../css/product/create&EditProduct.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Crear Producto</title>
+</head>
+<body>
+    <%- include('../partials/header')%>
+        <div class="main-formulario-alta-producto">
+            <div>
+                <h3>Crear un producto</h3>
+                <br>
+                <form action="./createProduct" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <div class="row">
+                            <label for="nombre">Título</label>
+                            <input type="text" name="nombre" id="nombre"
+                                class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
+                                value="<%= locals.oldData ? oldData.nombre : null %>">
+                            <% if (locals.nombre && errors.nombre) { %>
+                                <%= errors.nombre.msg %>
+                                    <% } %>
+                        </div>
+                        <div class="row">
+                            <label for="descripcion">Descripción</label>
+                            <input class="barra" name="descripcion" id="descripcion"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="volumen">Volumen</label>
+                            <input class="barra" name="volumen" id="volumen"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="autor">Autor</label>
+                            <input class="barra" name="autor" id="autor"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="artista">Artista</label>
+                            <input class="barra" name="artista" id="artista"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="editorial">Editorial</label>
+                            <input class="barra" name="editorial" id="editorial"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="qDePaginas">Cantidad de páginas</label>
+                            <input class="barra" name="qDePaginas" id="qDePaginas"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="colorObyn">Color/Blanco&Negro</label>
+                            <input class="barra" name="colorObyn" id="colorObyn"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="edicion">Edición</label>
+                            <input class="barra" name="edicion" id="edicion"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="precio">Precio</label>
+                            <input class="barra" type="text" name="precio" id="precio">
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="imagen">Imagen</label>
+                            <input class="barra-imagen" type="file" name="imagen" accept=".jpg,.png" multiple>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="botonera">
+                            <button type="submit">Crear Producto</button>
+                            <button type="reset">Borrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
