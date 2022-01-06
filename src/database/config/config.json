@@ -19,7 +19,8 @@
     "password": "Adrian12234..",
     "database": "comicsinguionbajo",
     "host": "45.79.201.214",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": "3306"
   }
 
 }
