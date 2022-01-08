@@ -1,10 +1,11 @@
 const express = require('express');
 const routes = express.Router();
-const apiUserss = require('../controllers/apiUsers');
-console.log('----')
-console.log(apiUserss)
+const resultApiUser = require('../controllers/apiUsers');
+const resultApiProduct = require('../controllers/apiProducts');
 
-
-routes.get('/users', apiUserss.allUsers);
+routes.get('/users', resultApiUser.allUsers);
+routes.get('/users/:id', resultApiUser.getUser);
+routes.get('/products', resultApiProduct.allProducts);
+routes.get('/products/:id', resultApiProduct.getProduct);
 
 module.exports = routes; 
