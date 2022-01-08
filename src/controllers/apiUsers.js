@@ -1,18 +1,19 @@
-//const { model } = require('../models/usersModel');
+const model = require("../models/usersModel");
 
-let apiUsers = {
+const apiUsers = {
 
     /* GET: All Users API */
-    //allUsers: async function (req, res) {
+    allUsers: async function (req, res, next) {
         
-       // try {
-       //     const result = await model.findAll();
-       //     res.status(200).json({data: result, error: null, succes: true})
-       // } catch (error) {
-       //     res.status(500).json({data: null, error: error, succes: false})
-        //}
-    //},
+        try {
+            const result = await model.getAll();
+            res.status(200).json({data: result, error: null, succes: true})
+        } catch (error) {
+            res.status(500).json({data: null, error: error, succes: false})
+        }
+    },
 
-}
-
-module.exports = apiUsers
+};
+console.log("-----")
+console.log(apiUsers)
+module.exports = apiUsers;

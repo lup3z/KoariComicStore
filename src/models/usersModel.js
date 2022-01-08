@@ -1,7 +1,7 @@
 const db = require('../database/models');
 
 const usersModel = {
-    findAll: async function () {
+    getAll: async function () {
         return await db.users.findAll()
     },
     generateId: async function (){

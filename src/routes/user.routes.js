@@ -38,7 +38,7 @@ const upload = multer({ storage: storage })
 
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
-const apiUsers = require('../controllers/apiUsers');
+
 
 router.get('/register', guestMiddleware, userController.register);
 router.post('/register', upload.single('avatar'), uservalidation, userController.newUserRegister);
@@ -46,6 +46,5 @@ router.get('/login', guestMiddleware, userController.login);
 router.post('/login', userController.loginProcess);
 router.get('/profile', authMiddleware, userController.profile);
 router.get('/logout', userController.logout);
-//router.get('/user', apiUsers.apiUsers);
 
 module.exports = router
