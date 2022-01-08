@@ -36,10 +36,26 @@ link a la app heroku: https://koaricomic.herokuapp.com/
 
 
 APIs:
+
 Todos los usuarios: http://localhost:3030/api/users
+
 Usuarios por ID: http://localhost:3030/api/users/{id}
+
 Todos los productos: http://localhost:3030/api/products
+
 Porducto por ID: http://localhost:3030/api/products/{id}
+
+
+APIs desde heroku:
+
+Todos los usuarios: https://koaricomic.herokuapp.com/api/users
+
+Usuarios por ID: https://koaricomic.herokuapp.com/api/users/{id}
+
+Todos los productos:https://koaricomic.herokuapp.com/api/products
+
+Porducto por ID: https://koaricomic.herokuapp.com/api/products/{id}
+
 
 ## Feed back sprint 1
 Excelente propuesta muchachos.    calificacion ( 10/10 )
