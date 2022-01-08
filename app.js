@@ -21,8 +21,10 @@ app.use(userLoggedMiddleware);
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
 app.use(methodOverride("_method"));
 app.use("/", require("./src/routes/index.routes"));
+app.use("/api", require("./src/routes/index.routes"));
 app.use((req, res, next) => {
   res.status(404).render('not-found')
 });
@@ -30,5 +32,6 @@ app.use((req, res, next) => {
 app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);
 });
+
 
 module.exports = app;

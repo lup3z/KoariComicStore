@@ -35,6 +35,12 @@ link al board del proyecto: https://grupo05digitalhouse.atlassian.net/jira/softw
 link a la app heroku: https://koaricomic.herokuapp.com/
 
 
+APIs:
+Todos los usuarios: http://localhost:3030/api/users
+Usuarios por ID: http://localhost:3030/api/users/{id}
+Todos los productos: http://localhost:3030/api/products
+Porducto por ID: http://localhost:3030/api/products/{id}
+
 ## Feed back sprint 1
 Excelente propuesta muchachos.    calificacion ( 10/10 )
 
