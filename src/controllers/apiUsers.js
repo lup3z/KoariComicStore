@@ -6,7 +6,7 @@ const apiUsers = {
     allUsers: async function (req, res, next) {
         
         try {
-            const result = await model.getAll();
+            const result = await model.findAll();
             res.status(200).json({
                 count: result.length,
                 users:  result.map(item => ({
