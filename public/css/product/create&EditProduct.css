@@ -39,7 +39,7 @@ label{
 }
 
 .barra{
-    width: 450px;
+    width: 330px;
 }
 
 .barra-imagen{
@@ -57,4 +57,9 @@ label{
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+}
+@media (max-width: 600px) {
+    .barra{
+        width: 200px;
+    }
 }
