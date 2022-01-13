@@ -10,17 +10,13 @@ body {
 }
 
 .formulario-login {
-  text-align: left;
+  text-align: center;
 }
 
-.login-form{
-  text-align: left;
-  border: 1px red solid;
-}
 
 .formulario-login  {
   margin-top: 11px;
-  border: 1px yellow solid;
+ 
 }
 
 .text-login2 {
@@ -29,6 +25,13 @@ body {
   text-align: center;
 }
 
+.enter {
+  color: white;
+  margin-top: 100px;
+  font-size: 40px;
+  font-family: "Bangers";
+  border-radius: 8px;
+}
 
 
 
@@ -39,14 +42,6 @@ body {
   margin: 19px 0;
   padding: 7px;
   width: 40%;
-}
-
-.enter {
-  color: white;
-  margin-top: 100px;
-  font-size: 40px;
-  font-family: "Bangers";
-  border-radius: 8px;
 }
 
 .text-login {
