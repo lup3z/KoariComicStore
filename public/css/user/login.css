@@ -54,6 +54,11 @@ body {
   font-weight: 500;
 }
 
+::placeholder {
+  font-family: "Bangers", cursive;
+  color: black;
+}
+
 
 
 
@@ -71,17 +76,7 @@ body {
   color: white;
 }
 
-
-::placeholder {
-  font-family: "Bangers", cursive;
-  color: black;
-  text-align: center;
-}
-
-
-input{
-  text-align: center;
-} */   
+ */   
 
 @media (min-width: 1400px) {
   body {
