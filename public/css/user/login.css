@@ -48,6 +48,12 @@ body {
   color: white;
 }
 
+.text-login-remember-me{
+  font-family: "Bangers", cursive;
+  color: white;
+  font-weight: 500;
+}
+
 
 
 
@@ -72,11 +78,6 @@ body {
   text-align: center;
 }
 
-.text-login-remember-me{
-    font-family: "Bangers", cursive;
-    color: white;
-    font-weight: 500;
-}
 
 input{
   text-align: center;
