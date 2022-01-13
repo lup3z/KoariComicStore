@@ -27,7 +27,8 @@ body {
 
 .enter {
   color: white;
-  margin-top: 100px;
+  margin-top: 250px;
+  margin-bottom: 10px;
   font-size: 40px;
   font-family: "Bangers";
   border-radius: 8px;
