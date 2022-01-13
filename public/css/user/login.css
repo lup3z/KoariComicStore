@@ -14,14 +14,14 @@ body {
 }
 
 .formulario-login  {
-  text-align: center;
+  
   margin-top: 11px;
 }
 
 .text-login2 {
   color: black;
   font-family: "Bangers", cursive;
-  width: 70%;
+  text-align: center;
 }
 
 
