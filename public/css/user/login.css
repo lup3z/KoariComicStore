@@ -16,9 +16,19 @@ body {
 .formulario-login  {
   text-align: center;
   margin-top: 11px;
- 
-  
 }
+
+.text-login2 {
+  color: black;
+  font-family: "Bangers", cursive;
+  width: 70%;
+}
+
+
+
+
+
+
 /* 
 .formulario-login .login-form div input {
   margin: 19px 0;
@@ -32,12 +42,6 @@ body {
   font-size: 40px;
   font-family: "Bangers";
   border-radius: 8px;
-}
-
-.text-login2 {
-  color: black;
-  font-family: "Bangers", cursive;
-  width: 750px;
 }
 
 .text-login {
