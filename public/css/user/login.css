@@ -40,9 +40,14 @@ body {
   margin-top: 20px;
   font-size: 35px;
   font-family: "Bangers", cursive;
-  color: white;
-  
+  color: white; 
 }
+
+.error {
+  font-family: "Bangers", cursive;
+  color: white;
+}
+
 
 
 
@@ -60,17 +65,6 @@ body {
   color: white;
 }
 
-.button-enviar .text-login {
-  background-color: black;
-  border: 0;
-  margin-top: 20px;
-  font-size: 25px;
-}
-
-.error {
-  font-family: "Bangers", cursive;
-  color: white;
-}
 
 ::placeholder {
   font-family: "Bangers", cursive;
