@@ -10,12 +10,17 @@ body {
 }
 
 .formulario-login {
-  margin-left: 250px;
+  text-align: left;
+}
+
+.login-form{
+  text-align: left;
+  border: 1px red solid;
 }
 
 .formulario-login  {
-  
   margin-top: 11px;
+  border: 1px yellow solid;
 }
 
 .text-login2 {
