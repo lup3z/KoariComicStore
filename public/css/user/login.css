@@ -82,12 +82,12 @@ body {
   .formulario-login .login-form div input {
     margin: 19px 0;
     padding: 7px;
-    width: 40%;
+    width: 100%;
   }
   
   .enter {
     color: white;
-    margin-top: 100px;
+    margin-top: 140px;
     font-size: 40px;
     font-family: "Bangers";
     border-radius: 8px;
