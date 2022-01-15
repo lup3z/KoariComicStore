@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../../img/backreg.jpg");
+  background-image: url("../../img/venomback.jpg");
   background-position: 85% -2%;
   background-repeat:no-repeat ;
   background-size:2560px 1384px ;
@@ -90,18 +90,11 @@ input{
     text-align: center;
 }
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   .formulario-login .login-form div input {
-    margin: 14px 0;
+    margin: 4px 0;
     width: 100%;
-    background-size:1440px 721px ;
+    background-position: 75% -2%;
   }
-  @media (max-width: 1500px){
-    body {
-      background-image: url("../../img/backreg.jpg");
-      background-position: 85% -2%;
-      background-repeat:no-repeat ;
-      background-size:2560px 1384px ;
-    }
-  }
+  
 }
