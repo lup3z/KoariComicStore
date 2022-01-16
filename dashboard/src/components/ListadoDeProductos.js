@@ -6,7 +6,7 @@ class ListadoDeProductos extends Component {
         super(props);
         this.state={
             listado: [],
-            url: "https://koaricomic.herokuapp.com/api/products"
+            url: "http://localhost:3030/api/products"
         }
     }
 

@@ -6,7 +6,7 @@ class UltimoUsuarioCreado extends Component {
         super(props);
         this.state={
             ultimoUsuario: [],
-            url: "https://koaricomic.herokuapp.com/api/users"
+            url: "http://localhost:3030/api/users"
         }
     }
 
