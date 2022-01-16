@@ -92,7 +92,7 @@ p {
   margin-top: 10px;
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 320px) {
   .contenedor ul li {
     width: 75px;
     height: 75px;
@@ -132,14 +132,14 @@ p {
   }
 
   .contenedor ul li {
-    width: 75px;
+    width: 15px;
     height: 75px;
     line-height: 75px;
     margin: 0 10px;
     text-align: center;
     float: left;
     transition: all 0.5s ease;
-    font-size: 20px;
+    font-size: 12px;
     margin-top: -35px;
   }
   .contenedor {

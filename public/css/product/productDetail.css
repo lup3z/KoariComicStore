@@ -5,8 +5,9 @@
 }
 
 .producto {
-   height: inherit;
-   width: 310px;
+  
+   height:400px;
+   width: 250px;
 }
 
 body{
@@ -43,9 +44,13 @@ body{
 
 .contenedor{
     margin-top: 45px;
-    width: 55%;
+    width: 75% ;
+    display :flex;
+    flex-wrap: wrap;
+    align-items:flex-start ;
     position: relative;
-    left: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .descripcion{
@@ -73,7 +78,7 @@ body{
 }
 
 .descripcion{
-    width: 100%;
+    width: 40%;
 
 }
 
@@ -108,15 +113,15 @@ form{
     text-align: center;
     margin-top: 35px;
 }
-
 @media (max-width: 600px) {
     .foto-detalles {
         display:contents;
+        margin-left: -22px;
 
     }
     .total1{
-        margin-left: -350px;
-        width: 200%;
+        margin-left: 1px;
+        width: 170%;
     }
     .descripcion{
         flex-direction: column;
@@ -128,4 +133,11 @@ form{
     .text01{
         display:contents;
     }
-  }
+   
+      
+    
+     
+      
+      
+    }
+  
