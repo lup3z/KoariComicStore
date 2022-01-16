@@ -5,9 +5,8 @@ class TotalDeProductos extends Component {
     constructor(props){
         super(props);
         this.state={
-            listado: [],
             cantidad: [],
-            url: "https://koaricomic.herokuapp.com/api/products"
+            url: "https://koaricomic.herokuapp.com/products"
         }
     }
 
