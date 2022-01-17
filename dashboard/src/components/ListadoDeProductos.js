@@ -38,13 +38,13 @@ class ListadoDeProductos extends Component {
               <p>El listado de productos en tienda es:</p>
               {this.state.listado.map((product, i)=>
               <tr key={i}>
-              <td>{product.id}</td>
-              <td>{product.name}   </td>
-              <td>${product.price}</td>
-          </tr>
+                <td>{product.id}</td>
+                <td>{product.name}   </td>
+                <td>${product.price}</td>
+            </tr>
               )}
           </div>
-        );
+        )
         
     }
 
