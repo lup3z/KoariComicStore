@@ -11,7 +11,7 @@
         <form action="./login" method="POST" class="login-form">
             <h3 class="enter">Login</h3>
             <div>
-                <input type="text" required placeholder="Correo electrónico" name="email" class="text-login2" style="width: 340px;">
+                <input type="text" required placeholder="Correo electrónico" name="email" class="text-login2">
                 <% if (locals.errors && errors.email) { %>
                     <p class="error">
                         <%= errors.email.msg %>
@@ -20,7 +20,7 @@
                         <span class="feedback"></span>
             </div>
             <div>
-                <input type="password" required placeholder="Contraseña" name="password" class="text-login2" style="width: 340px;">
+                <input type="password" required placeholder="Contraseña" name="password" class="text-login2">
                 <span class="feedback"></span>
             </div>
             <label class="remember-me">
