@@ -6,7 +6,7 @@ class UltimoProductoCreado extends Component {
         super(props);
         this.state={
             ultimoProducto: [],
-            url: "http://localhost:3030/api/products"
+            url: "https://serene-beyond-45379.herokuapp.com/http://koaricomic.herokuapp.com/api/products"
         }
     }
 

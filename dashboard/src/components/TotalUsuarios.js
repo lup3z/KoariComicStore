@@ -6,7 +6,7 @@ class TotalUsuarios extends Component {
         super(props);
         this.state={
             totalUsus: [],
-            url: "http://localhost:3030/api/users"
+            url: "https://serene-beyond-45379.herokuapp.com/http://koaricomic.herokuapp.com/api/users"
         }
     }
 

@@ -6,7 +6,7 @@ class TotalDeProductos extends Component {
         super(props);
         this.state={
             cantidad: [],
-            url: "http://localhost:3030/products"
+            url: "https://serene-beyond-45379.herokuapp.com/http://koaricomic.herokuapp.com/products"
         }
     }
 
