@@ -8,7 +8,8 @@
 	max-width: 100%;
 	padding: 25px;
 	margin: 1% auto 0;
-	position: relative;
+	margin-left: auto;
+    margin-right: auto;
 	z-index: 1;
     width: 625px;
     margin-top: 70px;
@@ -19,7 +20,7 @@ h3{
 }
 
 body{
-    background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
+    background-image: url("/img/backmr.jpg");
     color: rgb(20, 12, 12);
     font-family: 'Bangers', cursive;
     background-size: cover;

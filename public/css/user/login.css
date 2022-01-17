@@ -138,4 +138,15 @@ body {
   input{
     text-align: center;
   }
+
+  @media (min-width: 1500px){
+    body {
+      background-image: url("../../img/backreg.jpg");
+      background-position: 85% -2%;
+      background-repeat:no-repeat ;
+      background-size:2560px 1384px ;
+    }
+  }
+
 }
+
