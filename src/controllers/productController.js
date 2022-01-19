@@ -4,7 +4,6 @@ const { validationResult } = require('express-validator');
 const productController = {
     createProduct: async function (req, res) {
         try {
-            const products = await productsModel.findAll();
             const file = req.file;
             const id = await productsModel.generateId();
             
@@ -13,7 +12,8 @@ const productController = {
                 ...req.body,
                 imagen: `img/${file.filename}`,
             }
-            await productsModel.create(newProduct);            
+            await productsModel.create(newProduct);    
+            const products = await productsModel.findAll();
             res.render("./product/productList", {products});
         } catch (error) {
             res.status(404).render('not-found');
@@ -57,9 +57,8 @@ const productController = {
                 ...req.body,
                 imagen: `img/${file.filename}`,
             }
-            
-            const products = await productsModel.findAll();
             await productsModel.update(productToUpdate, id);
+            const products = await productsModel.findAll();
             res.render( "./product/productList",{ products });
         } catch (error) {
             res.status(404).render('not-found');
@@ -67,8 +66,8 @@ const productController = {
     },
     deleteProduct:  async function (req, res) {
         try{
-            const products = await productsModel.findAll();
             await productsModel.delete(req.params.id);
+            const products = await productsModel.findAll();
             return res.render("./product/productList", {products});
         } catch (error) {
             res.status(404).render('not-found');

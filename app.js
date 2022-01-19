@@ -29,9 +29,11 @@ app.use("/", require("./src/routes/index.routes"));
 
 app.use("/api", require("./src/routes/index.routes"));
 
+
 app.use((req, res, next) => {
   res.status(404).render('not-found')
 });
+
 
 app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);
