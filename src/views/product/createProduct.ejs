@@ -19,59 +19,122 @@
                             <input type="text" name="nombre" id="nombre"
                                 class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
                                 value="<%= locals.oldData ? oldData.nombre : null %>">
-                            <% if (locals.nombre && errors.nombre) { %>
-                                <%= errors.nombre.msg %>
-                                    <% } %>
+                                <% if (locals.errors && errors.nombre) { %>
+                                    <div class="warning-text">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <%= errors.nombre.msg %>
+                                    </div>
+                                <% } %>
                         </div>
+
                         <div class="row">
                             <label for="descripcion">Descripción</label>
                             <input class="barra" name="descripcion" id="descripcion"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.descripcion) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.descripcion.msg %>
+                                </div>
+                            <% } %>
                         </div>
+                        
                         <div class="row">
                             <label for="volumen">Volumen</label>
                             <input class="barra" name="volumen" id="volumen"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.volumen) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.volumen.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="autor">Autor</label>
                             <input class="barra" name="autor" id="autor"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.autor) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.autor.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="artista">Artista</label>
                             <input class="barra" name="artista" id="artista"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.artista) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.artista.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="editorial">Editorial</label>
                             <input class="barra" name="editorial" id="editorial"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.editorial) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.editorial.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="qDePaginas">Cantidad de páginas</label>
                             <input class="barra" name="qDePaginas" id="qDePaginas"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.qDePaginas) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.qDePaginas.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="colorObyn">Color / Blanco & Negro</label>
                             <input class="barra" name="colorObyn" id="colorObyn"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.colorObyn) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.colorObyn.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="edicion">Edición</label>
                             <input class="barra" name="edicion" id="edicion"></input>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.edicion) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.edicion.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="precio">Precio</label>
                             <input class="barra" type="text" name="precio" id="precio">
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.precio) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.precio.msg %>
+                                </div>
+                            <% } %>
                         </div>
+
                         <div class="row">
                             <label for="imagen">Imagen</label>
                             <input class="barra-imagen" type="file" name="imagen" accept=".jpg,.png" multiple>
-                            <span class="feedback"></span>
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="warning-text">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <%= errors.imagen.msg %>
+                                </div>
+                            <% } %>
                         </div>
                         <div class="botonera">
                             <button type="submit">Crear Producto</button>

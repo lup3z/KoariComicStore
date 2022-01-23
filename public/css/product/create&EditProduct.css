@@ -5,22 +5,23 @@
 }
 
 .main-formulario-alta-producto {
-	max-width: 100%;
 	padding: 25px;
 	margin: 1% auto 0;
 	margin-left: auto;
     margin-right: auto;
 	z-index: 1;
-    width: 625px;
+    width: fit-content;
     margin-top: 70px;
 }
 
 h3{
     text-align: center;
+    color: white;
+    font-weight: 400;
 }
 
 body{
-    background-image: url("/img/backmr.jpg");
+    background-image: url("/img/backcomic.jpg");
     color: rgb(20, 12, 12);
     font-family: 'Bangers', cursive;
     background-size: cover;
@@ -44,21 +45,34 @@ label{
 }
 
 .barra-imagen{
-    width: 450px;
+    width: 330px;
     text-align: center;
     position: relative;
-    left: 45px;
-}
-
-.text-danger{
- color: red;
+    left: 15px;
+    color: white;
+    font-weight: 400;
 }
 
 .botonera{
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
+
+.warning-text{
+    color: red;
+    width: 500px;
+}
+
+.row label {
+    text-align: right;
+    position: relative;
+    right: 5px;
+    color: white;
+    font-weight: 400;
+}
+
 @media (max-width: 600px) {
     .barra{
         width: 200px;

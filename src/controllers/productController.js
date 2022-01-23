@@ -5,9 +5,8 @@ const productController = {
     createProduct: async function (req, res) {
         const resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
-            return res.render('./product/createProduct.ejs', {
+            return res.render('./product/createProduct', {
                 errors: resultValidation.mapped(),
-                oldData: req.body,
             });
         }    
         try {

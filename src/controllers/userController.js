@@ -46,6 +46,12 @@ const userController = {
     },
         
     loginProcess: async function (req, res) {
+        const resultValidation = validationResult(req);
+		if (resultValidation.errors.length > 0) {
+             return res.render('./user/login', {
+				errors: resultValidation.mapped()
+			});
+        }
         try {
         let userToLogin = await usersModel.findByField('email', req.body.email);
         if(userToLogin){

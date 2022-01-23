@@ -30,6 +30,17 @@ body {
   margin: 10px;
 }
 
+.warning-text{
+  color: red;
+  font-family: "Bangers", cursive;
+}
+
+.warning-text2{
+  color: red;
+  font-family: "Bangers", cursive;
+  margin-bottom: 20px;
+}
+
 .enter {
   color: white;
   margin-top: 200px;

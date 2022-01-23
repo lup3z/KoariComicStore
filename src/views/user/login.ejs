@@ -11,17 +11,22 @@
         <form action="./login" method="POST" class="login-form">
             <h3 class="enter">Login</h3>
             <div>
-                <input type="text" required placeholder="Correo electrónico" name="email" class="text-login2">
+                <input type="text" placeholder="Correo electrónico" name="email" class="text-login2">
                 <% if (locals.errors && errors.email) { %>
-                    <p class="error">
+                    <div class="warning-text">
+                        <i class="fas fa-exclamation-circle"></i>
                         <%= errors.email.msg %>
-                    </p>
+                    </div>
                     <% } %>
-                        <span class="feedback"></span>
             </div>
             <div>
-                <input type="password" required placeholder="Contraseña" name="password" class="text-login2">
-                <span class="feedback"></span>
+                <input type="password" placeholder="Contraseña" name="password" class="text-login2">
+                <% if (locals.errors && errors.password) { %>
+                    <div class="warning-text2">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <%= errors.password.msg %>
+                    </div>
+                    <% } %>
             </div>
             <label class="remember-me">
                 <input type="checkbox" name="remember"><strong class="text-login-remember-me"> Recordar Usuario</strong>
