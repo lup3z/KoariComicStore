@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../../img/backreg.jpg");
+  background-position: 85% -2%;
+}
+
+.formulario-login {
+  text-align: center;
+}
+
+
+.formulario-login  {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-login2 {
+  color: black;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  padding: 6px;
+  margin: 10px;
+}
+
+.enter {
+  color: white;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-family: "Bangers";
+  border-radius: 8px;
+}
+
+.text-login {
+  background: none;
+  border: 0;
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: "Bangers", cursive;
+  color: white; 
+}
+
+.error {
+  font-family: "Bangers", cursive;
+  color: white;
+}
+
+.text-login-remember-me{
+  font-family: "Bangers", cursive;
+  color: white;
+  font-weight: 500;
+}
+
+::placeholder {
+  font-family: "Bangers", cursive;
+  color: black;
+}
+
+
+@media (min-width: 1400px) {
+  body {
+    background-image: url("../../img/backreg.jpg");
+    background-position: 85% -2%;
+  }
+  
+  .formulario-login {
+    margin-left: 250px;
+    position: inherit;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  
+  .formulario-login .login-form {
+    text-align: center;
+    margin-top: 11px;
+    margin-left: 80px;
+    width: 30%;
+  }
+  
+  .formulario-login .login-form div input {
+    margin: 19px 0;
+    padding: 7px;
+    width: 100%;
+  }
+  
+  .enter {
+    color: white;
+    margin-top: 140px;
+    font-size: 40px;
+    font-family: "Bangers";
+    border-radius: 8px;
+  }
+  
+  .text-login2 {
+    color: black;
+    font-family: "Bangers", cursive;
+    width: 750px;
+  }
+  
+  .text-login {
+    font-family: "Bangers", cursive;
+    color: white;
+  }
+  
+  .button-enviar .text-login {
+    background-color: black;
+    border: 0;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .error {
+    font-family: "Bangers", cursive;
+    color: white;
+  }
+  
+  ::placeholder {
+    font-family: "Bangers", cursive;
+    color: black;
+    text-align: center;
+  }
+  
+  .text-login-remember-me{
+      font-family: "Bangers", cursive;
+      color: white;
+      font-weight: 500;
+  }
+  
+  input{
+    text-align: center;
+  }
+
+  @media (min-width: 1500px){
+    body {
+      background-image: url("../../img/backreg.jpg");
+      background-position: 85% -2%;
+      background-repeat:no-repeat ;
+      background-size:2560px 1384px ;
+    }
+  }
+
+}
+

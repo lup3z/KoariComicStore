@@ -1,0 +1,11 @@
+[
+ {
+  "id": 1,
+  "email": "nicogomez23@gmail.com",
+  "nombre": "Nicolás Martín",
+  "apellido": "Gómez",
+  "password": "$2a$10$LPYOLo/gIHqpD7GOqzyC5.ig76CKTTW7vqCX36z2aedJLczCFmuVG",
+  "dni": "34906299",
+  "avatar": "img/1640461278295_img.jpg"
+ }
+]

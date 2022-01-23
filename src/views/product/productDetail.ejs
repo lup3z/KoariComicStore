@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head')%>
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/product/productDetail.css">
+        <title>Product Detail</title>
+</head>
+
+<body>
+    <%- include('../partials/header')%>
+        <main>
+            <div type="none" class="contenedor">
+                <div class="foto-detalles">
+                    <img src="../../<%= product.imagen %>" class="producto" height="200" width="200">
+                    <div class="total1">
+                        <div class="total">
+                            <div class="text01">
+                                <p class="detalle8">
+                                    <%= product.nombre %>
+                                </p>
+                                <p class="detalle9">$<%= product.precio %>
+                                </p>
+                            </div>
+                            <div class="descripcion">
+                                <div class="text03">
+                                    <p class="talento">Talento</p>
+                                    <p class="detalle1">Autor: <%= product.autor %>
+                                    </p>
+                                    <p class="detalle5">Artista: <%= product.artista %>
+                                    </p>
+                                </div>
+                                <div class="text02">
+                                    <p class="especificaciones">Especificaciones</p>
+                                    <p class="detalle1">Volumen: <%= product.volumen %>
+                                    </p>
+                                    <p class="detalle1"> Valor: $<%= product.precio %>
+                                    </p>
+                                    <p class="detalle1">Editorial: <%= product.editorial %>
+                                    </p>
+                                    <p class="detalle1">Edición: <%= product.edicion %>
+                                    </p>
+                                    <p class="detalle1">Cantidad de páginas: <%= product.qDePaginas %>
+                                    </p>
+                                    <p class="detalle5">Color/Blanco&Negro: <%= product.colorObyn %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="texto04-desc">Descripción: <%= product.descripcion %>
+                        </p>
+                        <% if (locals.userLogged===undefined) { %>
+                            <form action="/user/login">
+                                <input type="submit" value="Comprar!" name="Editar" class="btnForm">
+                            </form>
+                            <% } else { %>
+                                <% if (locals.userLogged.idUserCategory==1) { %>
+                                    <form method="GET" action="../editProduct/<%= product.id %>">
+                                        <input type="submit" value="Editar" name="Editar" class="btnForm">
+                                    </form>
+                                    <% } else { %>
+                                        <form action="/">
+                                            <input type="submit" value="Comprar!" name="Editar" class="btnForm">
+                                        </form>
+                                        <% } %>
+                                            <% } %>
+                    </div>
+                </div>
+        </main>
+</body>
+
+</html>

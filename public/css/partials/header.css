@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+.main-header{
+    font-family: 'Bangers', cursive;
+    background-color: rgb(197, 220, 226);
+    height: 6.5rem;  
+}
+
+.text-header-sub{
+    display: none;
+}
+
+.center-test{
+    width: 100%;
+}
+
+.logo-y-nombre{
+    display: flex;
+    flex-direction: row; 
+    color:black;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    transform: scaleX(-1);
+    height: 100px;
+}
+
+.text-header{
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+}
+
+.second-bar{
+    background-color: rgb(153, 234, 255);
+    border-top:1 black 1px;
+    height: 2rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-evenly;
+    position: relative;
+    top: 6px;
+}
+
+.navbar a{
+    font-family: 'Bangers', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.avatar-img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 50%;
+}
+
+.pic-plus-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media (min-width: 1330px) {
+    .text-header-sub{
+        display: block;
+        font-size: 25px;
+        font-family: 'Bangers', cursive;
+    }
+}

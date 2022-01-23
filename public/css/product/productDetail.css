@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.producto {
+  
+   height:400px;
+   width: 250px;
+}
+
+body{
+    background-image: url("/img/backcomic.jpg");
+    color: white;
+    font-family: 'Bangers', cursive;
+    background-size: cover;
+}
+
+.detalle8{
+    font-size: 30px;
+    color: red;
+    font-weight: 250;
+}
+
+.detalle9{
+    font-size: 30px;
+    color: yellow;
+    font-weight: 250;
+}
+
+.text01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.foto-detalles{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contenedor{
+    margin-top: 45px;
+    width: 75% ;
+    display :flex;
+    flex-wrap: wrap;
+    align-items:flex-start ;
+    position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+}
+
+.total1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    background-color: rgba(236, 236, 236, 0.3);
+    padding: 15px;
+    
+}
+
+.text02{
+    margin-left: 28px;
+    width: 50%;
+}
+
+.descripcion{
+    width: 40%;
+
+}
+
+.detalle1{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid white 1px;
+}
+
+.detalle5{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid white 1px;
+    border-top: solid white 1px;
+}
+
+
+.talento{
+    padding-bottom: 10px;
+}
+
+.text03{
+    width: 40%;
+}
+
+.texto04-desc{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+form{
+    text-align: center;
+    margin-top: 35px;
+}
+@media (max-width: 600px) {
+    .foto-detalles {
+        display:contents;
+        margin-left: -22px;
+
+    }
+    .total1{
+        margin-left: 1px;
+        width: 170%;
+    }
+    .descripcion{
+        flex-direction: column;
+    }
+    .text02{
+        margin-left:0%;
+        margin-top: 35px;
+    }
+    .text01{
+        display:contents;
+    }
+   
+      
+    
+     
+      
+      
+    }
+  

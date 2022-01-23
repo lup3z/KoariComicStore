@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head')%>
+        <link rel="stylesheet" href="../../css/product/create&EditProduct.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <title>Crear Producto</title>
+        <title>Editar Producto</title>
+</head>
+
+<body>
+    <%- include('../partials/header')%>
+        <div class="main-formulario-alta-producto">
+            <div>
+                <h3>Editar un producto</h3>
+                <br>
+                <form action="../<%= products.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <div class="row">
+                            <label for="name">Título</label>
+                            <input type="text" name="nombre" id="nombre" class="barra" value="<%= products.nombre %>">
+                        </div>
+                        <div class="row">
+                            <label for="descripcion">Descripción</label>
+                            <input class="barra" name="description" id="descripcion"
+                                value="<%= products.descripcion %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="volumen">Volumen</label>
+                            <input class="barra" name="volumen" id="volumen" value="<%= products.volumen%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="autores">Autor</label>
+                            <input class="barra" name="autor" id="autor" value="<%= products.autor%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="artista">Artista</label>
+                            <input class="barra" name="artista" id="artista" value="<%= products.artista%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="editorial">Editorial</label>
+                            <input class="barra" name="editorial" id="editorial"
+                                value="<%= products.editorial%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="qDePaginas">Cantidad de páginas</label>
+                            <input class="barra" name="qDePaginas" id="qDePaginas"
+                                value="<%= products.qDePaginas%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="colorObyn">Color / Blanco & Negro</label>
+                            <input class="barra" name="colorObyn" id="colorObyn"
+                                value="<%= products.colorObyn%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="fecha">Edición</label>
+                            <input class="barra" name="edicion" id="edicion" value="<%= products.edicion %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="precio">Precio</label>
+                            <input class="barra" type="text" name="precio" id="precio"
+                                value="<%= products.precio %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="imagen">Imagen</label>
+                            <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <br>
+                        <div class="botonera">
+                            <div>
+                                <button type="submit" class="botonera">Editar Producto</button>
+                            </div>
+
+                        </div>
+                </form>
+                <br>
+                <form method="POST" action="../<%= products.id %>?_method=DELETE">
+                    <div class="botonera">
+                    <button type="submit">Borrar</button>
+                   </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+.black {
+  height: 3rem;
+  background-color: black;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 72px;
+  left: 100px;
+}
+
+.contenedor ul {
+  list-style: none;
+}
+
+.contenedor ul li {
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  float: left;
+  transition: all 0.5s ease;
+  font-size: 20px;
+}
+
+.contenedor .fa-facebook {
+  color: white;
+}
+
+.contenedor .fa-instagram {
+  color: white;
+}
+
+.contenedor .fa-google {
+  color: white;
+}
+
+.contenedor .fa-whatsapp {
+  color: white;
+}
+
+.contenedor ul li:hover .fa-facebook {
+  color: blue;
+  text-shadow: 0 0 15px blue;
+  transition: all 0.2s ease;
+}
+
+.contenedor ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.2s ease;
+}
+
+.contenedor ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.2s ease;
+}
+
+.contenedor ul li:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 300px #4dc247;
+  transition: all 0.2s ease;
+}
+
+.footer-mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-weight: 500;
+  font-family: "Bangers", cursive;
+}
+
+.lastfooter {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dhfoto {
+  width: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) {
+  .contenedor ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    float: left;
+    transition: all 0.5s ease;
+    font-size: 20px;
+  }
+
+  .footer-mensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .black {
+    display: none;
+  }
+
+  .contenedor .fa-facebook {
+    color: black;
+  }
+
+  .contenedor .fa-instagram {
+    color: black;
+  }
+
+  .contenedor .fa-google {
+    color: black;
+  }
+
+  .contenedor .fa-whatsapp {
+    color: black;
+  }
+
+  .contenedor ul li {
+    width: 15px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    float: left;
+    transition: all 0.5s ease;
+    font-size: 12px;
+    margin-top: -35px;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: static;
+  }
+
+  .dhfoto {
+    display: none;
+  }
+
+  .class {
+    margin-top: -10px;
+  }
+}

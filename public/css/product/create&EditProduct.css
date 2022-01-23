@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+.main-formulario-alta-producto {
+	max-width: 100%;
+	padding: 25px;
+	margin: 1% auto 0;
+	margin-left: auto;
+    margin-right: auto;
+	z-index: 1;
+    width: 625px;
+    margin-top: 70px;
+}
+
+h3{
+    text-align: center;
+}
+
+body{
+    background-image: url("/img/backmr.jpg");
+    color: rgb(20, 12, 12);
+    font-family: 'Bangers', cursive;
+    background-size: cover;
+}
+
+.row{
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    position: relative;
+    top: 3px;
+    text-align: center;
+    width: 25%;
+}
+
+.barra{
+    width: 330px;
+}
+
+.barra-imagen{
+    width: 450px;
+    text-align: center;
+    position: relative;
+    left: 45px;
+}
+
+.text-danger{
+ color: red;
+}
+
+.botonera{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 600px) {
+    .barra{
+        width: 200px;
+    }
+}
