@@ -20,12 +20,13 @@
                     <% } %>
             </div>
             <div>
-                <input type="text" name="nombre" id="nombre" value="<%= locals.oldData ? oldData.nombre : null %>" placeholder="Nombre">
-                <% if (locals.errors && errors.nombre) { %>
-                    <div class="warning-text">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <%= errors.nombre.msg %>
-                    </div>
+                <input type="text" name="nombre" value="<%= locals.oldData ? oldData.nombre : null %>" placeholder="Nombre">
+                <div id="errors-first-name" class="warning-text"></div>
+                    <% if (locals.errors && errors.nombre) { %>
+                        <div id="validation1" class="warning-text">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <%= errors.nombre.msg %>
+                        </div>
                     <% } %>
             </div>
             <div>
