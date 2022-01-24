@@ -37,6 +37,7 @@ body{
 label{
     position: relative;
     top: 3px;
+    margin: 8px; 
 }
 
 .barra{
@@ -64,6 +65,7 @@ label{
     width: 500px;
     text-align: center;
     width: 100%;
+    margin: 8px;
 }
 
 .row label {
