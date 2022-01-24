@@ -4,16 +4,16 @@
   box-sizing: border-box;
 }
 
-.warning-text{
+.warning-text {
   color: red;
 }
 
 body {
   background-image: url("../../img/venomback.jpg");
   background-position: 85% -2%;
-  background-repeat:no-repeat ;
-  background-size:2560px 1384px ;
-  font-family: 'Bangers', cursive;
+  background-repeat: no-repeat;
+  background-size: 2560px 1384px;
+  font-family: "Bangers", cursive;
 }
 
 .formulario-login .login-form {
@@ -71,42 +71,135 @@ body {
   font-weight: 500;
 }
 
-.text01{
-    font-family: "Bangers", cursive;
-    color: white; 
+.text01 {
+  font-family: "Bangers", cursive;
+  color: white;
 }
 
-.form-control{
-    color: white;
-   align-items: center;
+.form-control {
+  color: white;
+  align-items: center;
 }
 
-.formulario-login{
-    width: 100%;
+.formulario-login {
+  width: 100%;
 }
 
 .imagen-class {
-    width: 80%;
-    position: relative;
-    left: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
-.warning-text1{
+.warning-text1 {
   color: red;
   position: relative;
   bottom: 10px;
   margin-bottom: 5px;
 }
 
-input{
-    text-align: center;
+input {
+  text-align: center;
 }
 
- @media (max-width: 600px) {
-  .formulario-login .login-form div input {
-    margin: 4px 0;
-    width: 100%;
-    background-position: 75% -2%;
+@media (min-width: 1400px) {
+  .warning-text {
+    color: red;
   }
-  
+
+  body {
+    background-image: url("../../img/venomback.jpg");
+    background-position: 85% -2%;
+    background-repeat: no-repeat;
+    background-size: 2560px 1384px;
+    font-family: "Bangers", cursive;
+  }
+
+  .formulario-login .login-form {
+    text-align: center;
+    margin-left: 80px;
+    width: 60%;
+  }
+
+  .formulario-login .login-form div input {
+    margin: 14px 0;
+    width: 40%;
+    height: 35px;
+    text-align: center;
+  }
+
+  .enter {
+    color: white;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: "Bangers";
+    border-radius: 8px;
+  }
+
+  .text-login2 {
+    color: black;
+    font-family: "Bangers", cursive;
+    width: 750px;
+  }
+
+  .text-login {
+    font-family: "Bangers", cursive;
+    color: white;
+  }
+
+  .button-enviar .text-login {
+    background-color: black;
+    border: 0;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .error {
+    font-family: "Bangers", cursive;
+    color: white;
+  }
+
+  ::placeholder {
+    font-family: "Bangers", cursive;
+    color: black;
+    text-align: center;
+  }
+
+  .text-login-remember-me {
+    font-family: "Bangers", cursive;
+    color: white;
+    font-weight: 500;
+  }
+
+  .text01 {
+    font-family: "Bangers", cursive;
+    color: white;
+    bottom: 5px;
+  }
+
+  .form-control {
+    color: white;
+  }
+
+  .form-control{
+    color: white;
+   align-items: center;
+}
+
+.imagen-class {
+  width: 80%;
+  position: relative;
+  left: 100px;
+  display: contents;
+}
+
+  .warning-text1 {
+    color: red;
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    text-align: center;
+  }
 }
